@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Hangman in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>HANGMAN</h1>
+            <div id="stats-bar" class="hidden">
+                <span>Score: <span id="score">0</span></span>
+                <span>High Score: <span id="high-score">0</span></span>
+            </div>
+        </header>
+
+        <div id="theme-screen">
+            <h2>Select a Theme</h2>
+            <div class="theme-buttons">
+                <button onclick="startGame('winter')">Winter</button>
+                <button onclick="startGame('school')">School</button>
+                <button onclick="startGame('movie')">Movie</button>
+                <button onclick="startGame('food')">Food</button>
+                <button onclick="startGame('place')">Place</button>
+                <button onclick="startGame('company')">Company</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <pre id="hangman-art"></pre>
+
+            <div id="word-display">_ _ _ _ _</div>
+
+            <div id="message-area"></div>
+
+            <div class="input-area">
+                <input type="text" id="letter-input" maxlength="1" placeholder="?" autocomplete="off">
+                <button id="guess-btn" onclick="handleGuess()">Guess</button>
+            </div>
+            
+            <p class="instruction">Guess a letter</p>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h2 id="game-over-title">Game Over!</h2>
+            <p id="final-score-msg"></p>
+            <p>Would you like to play again?</p>
+            <div class="theme-buttons">
+                <button onclick="resetGame(true)">Yes</button>
+                <button onclick="resetGame(false)">No</button>
+            </div>
+        </div>
+        
+        <div id="goodbye-screen" class="hidden">
+            <h2>Thanks for playing!</h2>
+            <p>Refresh the page to start over.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
