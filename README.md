@@ -1,8 +1,21 @@
 # themed-hangman-game
-My original python hangman game but now playable on a browser (using JavaScript)!
+My [original python hangman game](https://github.com/Tofaluu/Themed-Hangman.git) but now playable on a browser (using JavaScript)!
 
-Hangman is a single player game where the user will play against the computer, attempting to guess a randomly generated word.
+**Hangman** is a single-player game where you compete against the computer to guess a secret word before time runs out.
 
-To start, the user chooses a theme from the six available options, and the computer generates a word or phrase based on the input. Then, the user must attempt to guess the phrase one letter at a time. If correct, the appropriate blanks spaces(s) will be filled with the said letter. If incorrect, a section of the "Hangman" figure will be displayed. If enough incorrect guesses are made, the entire figure will be completed and the game will end with a loss for the user, and ask if the user wants to play again. If the user successfully guesses the entire word before the "Hangman" is complete, the game will display the user's score, and generate another word/phrase from the selected theme. Each word successfully completed will result in 1 point for the user, and the final score will be shown once the game is over.
+### 👉 [Click Here to Play in Browser](https://tofaluu.github.io/themed-hangman-game/)
+
+## 🎮 How to Play
+1. **Choose a Theme:** Select one of six unique themes to start the game.
+2. **Guess Letters:** Attempt to decipher the phrase one letter at a time.
+3. **Win or Lose:**
+   * **Correct Guess:** Fills in the blanks.
+   * **Wrong Guess:** Adds a part to the "Hangman" figure.
+   * **Game Over:** If the figure is completed, you lose!
+
+## 🏆 Scoring
+* **1 Point** for every word successfully guessed.
+* If you win, the game immediately generates a new word from the same theme so you can keep your streak alive.
+* Your final score is displayed when the game ends.
 
 Have fun and keep hanging on!
